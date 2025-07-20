@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover LM Studio: Your Local AI Powerhouse</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a202c; /* Dark background */
+            color: #e2e8f0; /* Light text */
+        }
+        .container-padding {
+            padding-left: 1rem; /* px-4 */
+            padding-right: 1rem; /* px-4 */
+        }
+        @media (min-width: 640px) { /* sm */
+            .container-padding {
+                padding-left: 2rem; /* sm:px-8 */
+                padding-right: 2rem; /* sm:px-8 */
+            }
+        }
+        @media (min-width: 1024px) { /* lg */
+            .container-padding {
+                padding-left: 4rem; /* lg:px-16 */
+                padding-right: 4rem; /* lg:px-16 */
+            }
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-gray-800 py-6 shadow-lg rounded-b-xl">
+        <div class="max-w-7xl mx-auto container-padding flex flex-col sm:flex-row items-center justify-between">
+            <div class="flex items-center">
+                <a href="index.html" class="mr-4 text-gray-300 hover:text-blue-300 transition duration-300" title="Back to Home">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                    </svg>
+                </a>
+                <h1 class="text-4xl font-extrabold text-blue-400 mb-4 sm:mb-0">LM Studio</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#overview" class="text-gray-300 hover:text-blue-300 transition duration-300 font-medium">Overview</a></li>
+                    <li><a href="#features" class="text-gray-300 hover:text-blue-300 transition duration-300 font-medium">Features</a></li>
+                    <li><a href="#pricing" class="text-gray-300 hover:text-blue-300 transition duration-300 font-medium">Pricing</a></li>
+                    <li><a href="#get-started" class="text-gray-300 hover:text-blue-300 transition duration-300 font-medium">Get Started</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="overview" class="py-20 bg-gradient-to-r from-gray-900 to-gray-800 text-center rounded-xl mx-4 my-8 shadow-xl container-padding">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-5xl font-bold text-white mb-6 leading-tight">Unlock the Power of AI, Locally.</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                LM Studio brings the cutting-edge world of Large Language Models (LLMs) directly to your desktop.
+                Experience powerful AI inference with complete privacy, no cloud dependencies, and zero cost.
+            </p>
+            <a href="https://lmstudio.ai/" target="_blank" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                Download LM Studio Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-16 bg-gray-900 rounded-xl mx-4 my-8 shadow-xl container-padding">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Key Features</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Feature Card 1: Local LLM Execution -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 text-5xl mb-4 text-center">🧠</div>
+                    <h3 class="text-2xl font-semibold text-white mb-3 text-center">Local LLM Execution</h3>
+                    <p class="text-gray-300 text-center">
+                        Run a wide array of Large Language Models (LLMs) such as LLaMA, Mistral, DeepSeek, Qwen, and Phi directly on your own computer's CPU and/or GPU. This means your data never leaves your machine, ensuring maximum privacy and security. Enjoy rapid inference speeds, limited only by your hardware, without relying on external servers or internet connectivity for core operations.
+                    </p>
+                </div>
+
+                <!-- Feature Card 2: User-Friendly Interface -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 text-5xl mb-4 text-center">💬</div>
+                    <h3 class="text-2xl font-semibold text-white mb-3 text-center">Intuitive Chat Interface</h3>
+                    <p class="text-gray-300 text-center">
+                        Interact with your downloaded LLMs through a clean and familiar chat interface, reminiscent of popular online AI chatbots. This user-friendly design makes it easy for anyone, regardless of technical expertise, to start conversing with powerful AI models, experiment with prompts, and explore their capabilities in a natural, conversational manner.
+                    </p>
+                </div>
+
+                <!-- Feature Card 3: Model Discovery & Download -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 text-5xl mb-4 text-center">🔍</div>
+                    <h3 class="text-2xl font-semibold text-white mb-3 text-center">Extensive Model Catalog</h3>
+                    <p class="text-gray-300 text-center">
+                        Browse and download a vast selection of open-weight LLMs directly from Hugging Face repositories within the LM Studio application. The integrated catalog allows you to discover new and noteworthy models, view their details, and easily acquire the necessary files (e.g., GGUF format) to run them locally, keeping you at the forefront of AI innovation.
+                    </p>
+                </div>
+
+                <!-- Feature Card 4: Local API Server -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 text-5xl mb-4 text-center">🔌</div>
+                    <h3 class="text-2xl font-semibold text-white mb-3 text-center">OpenAI-Compatible Local API</h3>
+                    <p class="text-gray-300 text-center">
+                        For developers and power users, LM Studio offers the ability to spin up a local API server that is compatible with OpenAI's API structure. This powerful feature allows you to seamlessly integrate your locally running LLMs into your own applications, scripts, or development workflows, enabling rapid prototyping and secure, private AI-powered solutions.
+                    </p>
+                </div>
+
+                <!-- Feature Card 5: Document Chat (RAG) -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 text-5xl mb-4 text-center">📚</div>
+                    <h3 class="text-2xl font-semibold text-white mb-3 text-center">Chat with Your Documents (RAG)</h3>
+                    <p class="text-gray-300 text-center">
+                        Leverage Retrieval Augmented Generation (RAG) to interact with your own local documents. Load your files into LM Studio and engage in conversations with the LLM, which can then retrieve and synthesize information directly from your private data. This feature is invaluable for research, data analysis, and creating personalized knowledge bases, all while maintaining complete data confidentiality.
+                    </p>
+                </div>
+
+                <!-- Feature Card 6: Cross-Platform & Offline -->
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <div class="text-blue-400 text-5xl mb-4 text-center">💻</div>
+                    <h3 class="text-2xl font-semibold text-white mb-3 text-center">Cross-Platform & Offline</h3>
+                    <p class="text-gray-300 text-center">
+                        LM Studio is designed for broad accessibility, supporting macOS, Windows, and Linux operating systems. Crucially, once models are downloaded, all inference and core functionalities operate entirely offline. This eliminates concerns about internet connectivity, data transmission, and ensures that your AI interactions remain private and secure on your local machine.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing & Open Source Section -->
+    <section id="pricing" class="py-16 bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl mx-4 my-8 shadow-xl container-padding">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-400 mb-8">Pricing & Open Source Status</h2>
+            <p class="text-xl text-gray-300 mb-6">
+                LM Studio is committed to making local AI accessible to everyone.
+            </p>
+            <div class="bg-gray-800 p-8 rounded-lg shadow-md">
+                <h3 class="text-3xl font-semibold text-white mb-4">Completely Free for Personal & Business Use</h3>
+                <p class="text-gray-300 text-lg mb-4">
+                    As of recent updates, LM Studio is **free to use for both personal experimentation and internal business purposes**. There are no subscription fees, usage charges, or hidden costs for its core functionalities. This aligns with its mission to democratize access to powerful AI models.
+                </p>
+                <h4 class="text-2xl font-semibold text-blue-300 mb-3">Understanding its Open Source Nature:</h4>
+                <ul class="list-disc list-inside text-left text-gray-300 space-y-2 max-w-2xl mx-auto">
+                    <li>The **LM Studio GUI application itself is proprietary**. This means its source code is not openly available for modification or redistribution.</li>
+                    <li>However, LM Studio is built upon and **heavily leverages leading open-source libraries** like `llama.cpp` (for running GGUF models) and Apple's `MLX` (for Apple Silicon Macs).</li>
+                    <li>Furthermore, key components such as LM Studio's **CLI (`lms`), Core SDKs (Python, TypeScript), and the MLX inferencing engine are indeed open source** (MIT licensed), allowing developers to build upon its foundational elements.</li>
+                    <li>This model allows LM Studio to provide a polished, user-friendly experience while contributing to and benefiting from the broader open-source AI ecosystem.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section id="use-cases" class="py-16 bg-gray-900 rounded-xl mx-4 my-8 shadow-xl container-padding">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blue-400 mb-12">Who Can Benefit from LM Studio?</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-white mb-3">AI Enthusiasts & Learners</h3>
+                    <p class="text-gray-300">
+                        If you're curious about Large Language Models but intimidated by cloud platforms or complex command-line setups, LM Studio is your perfect entry point. It provides a straightforward way to experiment with different LLMs, understand their capabilities, and learn about prompt engineering in a risk-free, private environment.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Developers & Prototypers</h3>
+                    <p class="text-gray-300">
+                        For developers looking to integrate AI into their applications, LM Studio offers a rapid prototyping environment. The OpenAI-compatible local API server allows you to test LLM integrations quickly and securely, without incurring API costs or exposing sensitive data to external services. Build and iterate faster with local control.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Privacy-Conscious Users & Businesses</h3>
+                    <p class="text-gray-300">
+                        In industries handling sensitive information (e.g., legal, healthcare, finance), data privacy is paramount. LM Studio ensures that all your AI interactions and data processing remain entirely on your local machine, adhering to strict privacy regulations and avoiding any cloud exposure. This provides a secure environment for confidential tasks.
+                    </p>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-xl transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Researchers & Data Scientists</h3>
+                    <p class="text-gray-300">
+                        Experiment with various LLM architectures and fine-tuned models without the overhead of managing cloud infrastructure. LM Studio provides a stable platform for testing model performance, comparing outputs, and conducting research on different language models in a controlled, reproducible local environment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Started Section -->
+    <section id="get-started" class="py-16 bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl mx-4 my-8 shadow-xl container-padding">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-400 mb-8">How to Get Started</h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Getting started with LM Studio is simple and straightforward.
+            </p>
+            <div class="flex flex-col items-center space-y-8">
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-md">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Step 1: Download & Install</h3>
+                    <p class="text-gray-300">Visit the official LM Studio website and download the installer for your operating system (macOS, Windows, or Linux). Follow the on-screen instructions to complete the installation.</p>
+                    <a href="https://lmstudio.ai/" target="_blank" class="mt-4 inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">Download Here</a>
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-md">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Step 2: Discover & Download Models</h3>
+                    <p class="text-gray-300">Open LM Studio, navigate to the "Discover" tab. Browse the extensive catalog of LLMs, select your preferred model (e.g., a LLaMA or Mistral variant), and click to download its GGUF weights to your local machine.</p>
+                    <img src="https://placehold.co/400x200/2d3748/a0aec0?text=Model+Discovery+Placeholder" alt="Model Discovery Screenshot" class="mt-4 rounded-md mx-auto">
+                </div>
+                <div class="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-md">
+                    <h3 class="text-2xl font-semibold text-white mb-3">Step 3: Load & Chat</h3>
+                    <p class="text-gray-300">Go to the "Chat" tab, select the model you just downloaded from the dropdown menu to load it into memory. Once loaded, you can immediately start conversing with the LLM in the chat interface.</p>
+                    <img src="https://placehold.co/400x200/2d3748/a0aec0?text=Chat+Interface+Placeholder" alt="Chat Interface Screenshot" class="mt-4 rounded-md mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 py-6 mt-8 rounded-t-xl">
+        <div class="max-w-7xl mx-auto container-padding text-center text-gray-400">
+            <p>&copy; 2025 LM Studio Showcase. All rights reserved.</p>
+            <p class="text-sm mt-2">Built with ❤️ and powered by local AI.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

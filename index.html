@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Discord Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="landing-section" class="section">
+        <div class="container">
+            <nav class="main-nav">
+                <div class="nav-left"></div>
+                <div class="nav-right">
+                    <!-- Hamburger Menu -->
+                    <div class="menu-container">
+                        <label class="hamburger">
+                            <input type="checkbox" id="menu-toggle" />
+                            <svg viewBox="0 0 32 32">
+                                <path
+                                    class="line line-top-bottom"
+                                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+                                ></path>
+                                <path class="line" d="M7 16 27 16"></path>
+                            </svg>
+                        </label>
+                        <div class="dropdown-menu">
+                            <a href="#landing-section" class="menu-item" data-section="landing">Home</a>
+                            <a href="#tools-section" class="menu-item" data-section="tools">Tools</a>
+                            <a href="#about-section" class="menu-item" data-section="about">About</a>
+                            <a href="#" class="menu-item" id="discord-link">Discord Server</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <h1>Link</h1>
+            </div>
+        </div>
+    </header>
+
+    <section id="user-selection-section" class="section">
+        <div class="container">
+            <h2>Select a Member</h2>
+            <div class="member-buttons-container"> </div>
+            <p class="scroll-hint">Scroll to see more members &gt;&gt;</p>
+        </div>
+    </section>
+
+    <main id="user-content-display-section" class="section">
+        <div class="container">
+            <h2><span id="selected-user-name"></span></h2>
+            <div id="user-content-area">
+                <p class="placeholder-text">Select a member above to view their cool stuff!</p>
+            </div>
+        </div>
+    </main>
+
+    <section id="tools-section" class="section">
+        <div class="container">
+            <h2>Community Tools</h2>
+            <div class="tools-container">
+                <div class="tools-category">
+                    <h3>Recommended Tools</h3>
+                    <div class="tools-grid" id="external-tools">
+                        <!-- External tools will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-section" class="section">
+        <div class="container">
+            <h2>About This Hub</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Welcome to our community showcase! This platform serves as a central place to explore the tools, projects, and profiles created by our members.</p>
+                    
+                    <h3>Our Purpose</h3>
+                    <p>We're a diverse group of creators, developers, and enthusiasts who share a passion for technology, gaming, and digital creativity. This website brings together our collective work in one place.</p>
+                    
+                    <h3>Explore & Discover</h3>
+                    <p>Browse through the tools and content created by our community members. Each project represents the unique skills and interests of its creator.</p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="images/community-placeholder.jpg" alt="Community Showcase" class="community-image">
+                </div>
+            </div>
+            
+            <div class="credits">
+                <p>Website created by <strong>Charm?</strong> with ❤️ for our community</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="bottom-banner">
+        <div class="container">
+            <p>&copy; 2025 Our Discord Community. All rights reserved.</p>
+            <p>Made with &lt;3 for our friends.</p>
+            <p><a href="YOUR_DISCORD_INVITE_LINK" target="_blank">Join our Discord!</a></p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Scroll to top when page loads
+        window.addEventListener('load', function() {
+            // For modern browsers
+            if ('scrollRestoration' in history) {
+                history.scrollRestoration = 'manual';
+            }
+            // Scroll to top
+            window.scrollTo(0, 0);
+        });
+    </script>
+</body>
+</html>
